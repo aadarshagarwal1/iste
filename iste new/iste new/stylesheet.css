@@ -1,0 +1,266 @@
+
+
+ 
+  #event {
+    
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #event  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #event .swiper-slide {
+background-position: center;
+background-size: cover;
+width: 360px;
+ 
+background: rgb(49, 48, 48);
+box-shadow: 0 15px 50px rbga(0,0,0,0.2);
+filter: blur(4px);
+border-radius: 10px;
+}
+
+#event .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  #event  .swiper-slide-active{
+  filter: blur(0px);
+  background: #1a1a00;
+}
+#event .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+}
+
+#event .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #cda45e;
+}
+
+
+
+#event .swiper-container-3d .swiper-slide-shadow-left,.swiper-container-3d .swiper-slide-shadow-right{
+  background-image: none;
+}
+#event .card {
+display: grid;
+color: #fff;
+grid-template-columns: 300px;
+grid-template-rows: 210px 275px 80px;
+grid-template-areas: "image" "text" "stats";
+border-radius: 18px;
+background: #26231d;
+box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+/* font-family: roboto; */
+/* font-family: 'Rubik', sans-serif; */
+font-family: 'Montserrat', sans-serif;
+font-family: 'Rubik', sans-serif;
+text-align: center;
+}
+#event  .card-image {
+grid-area: image;
+
+}
+#event  .card-text {
+grid-area: text;
+}
+#event .card-image {
+grid-area: image;
+background: url("img1.jpg");
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+background-size: cover;
+}
+
+
+#event .card :before{
+content: '';
+
+top: -2px;
+left: -2px;
+right: -2px;
+bottom: -2px;
+
+z-index: -1;
+}
+#event .card:after{
+  content: '';
+
+top: -2px;
+left: -2px;
+right: -2px;
+bottom: -2px;
+
+z-index: -2;
+filter:blur(80px)
+
+}
+#event .card-text {
+grid-area: text;
+margin: 25px;
+}
+#event .card-text .date {
+font-size:13px;
+}
+#event  .card-text p {
+color: #fff;
+font-size:13px;
+font-weight: light;
+font-family: 'Rubik', sans-serif;
+margin-top: 10px;
+
+
+}
+#event .card-text h2 {
+margin-top:0px;
+font-size:30px;
+color: #ffff;
+
+
+
+
+}
+#event .card-text h2::before{
+content: '';
+position: absolute;
+mix-blend-mode: difference;
+filter:blur(3px)
+
+}
+
+
+
+
+
+#event  .card-stats {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  
+
+
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+}
+#event  .card-stats .stat {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+color: white;
+padding:10px;
+}
+#event .card:hover {
+transform: scale(1.15);
+box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+#event  .card {
+
+
+transition: 0.5s ease;
+cursor: pointer;
+margin:30px;
+}
+
+/* card bottom colors  */
+#smartcity {
+  background-color : #031432;
+}
+
+
+#qifesta{
+  background-color :#323c48 ;
+}
+
+#adventure{
+  background-color :#fcaf01 ;
+}
+
+#spider{
+  background-color :#1c1b19 ;
+}
+
+#aavishkar {
+  background-color : #3c1457;
+}
+
+#solutiondesk{
+  background-color :#2e393b ;
+}
+
+#footer p{
+  color: white;
+}
+
+.value a {
+  display: block;
+  color : white;
+  
+}
+/*--------------------------------------------------------------
+# Our Team
+--------------------------------------------------------------*/
+.team .member {
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  background: rgb(8, 5, 5);;
+  color: #fff;
+}
+
+.team .member img {
+  max-width: 60%;
+  border-radius: 50%;
+  margin: 0 0 30px 0;
+}
+
+.team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+.team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+.team .member p {
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: #aaaaaa;
+}
+
+.team .member .social {
+  margin-top: 15px;
+}
+
+.team .member .social a {
+ 
+  transition: 0.3s;
+}
+
+.team .member .social a:hover {
+  color:#e68a1a;
+}
+
+.team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
